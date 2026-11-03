@@ -32,8 +32,8 @@ const loadMoreBtn = document.getElementById('load-more-btn');
 const allLoadedMsg = document.getElementById('all-loaded-msg');
 
 if (galleryGrid && loadMoreBtn) {
-  // Seluruh 41 foto lanjutan (karya-10 s/d karya-50) dari total 50 foto
-  const additionalImages = Array.from({ length: 41 }, (_, i) => {
+  // Seluruh 61 foto lanjutan (karya-10 s/d karya-70) dari total 70 foto
+  const additionalImages = Array.from({ length: 61 }, (_, i) => {
     const num = String(i + 10).padStart(2, '0');
     return `assets/karya-${num}.jpg`;
   });

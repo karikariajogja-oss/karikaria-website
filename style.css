@@ -1040,72 +1040,6 @@ a {
     bottom: 5px
 }
 
-.market-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 43px 10px 0
-}
-
-.market-row h3 {
-    font-family: var(--display);
-    font-size: 23px;
-    margin: 7px 0
-}
-
-.market-links {
-    display: flex;
-    gap: 14px
-}
-
-.market-link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 18px;
-    background: #ffffffbd;
-    border: 1px solid #ffffffb0;
-    border-radius: 14px;
-    min-width: 185px;
-    transition: .25s
-}
-
-.market-link:hover {
-    transform: translateY(-4px);
-    background: #fff
-}
-
-.market-icon {
-    width: 37px;
-    height: 37px;
-    border-radius: 11px;
-    background: #ee6b32;
-    color: #fff;
-    display: grid;
-    place-items: center;
-    font-family: var(--display);
-    font-weight: 800;
-    font-size: 21px
-}
-
-.lazada .market-icon {
-    background: #6842b8
-}
-
-.market-link span:last-child {
-    display: grid;
-    gap: 3px
-}
-
-.market-link b {
-    font-size: 13px
-}
-
-.market-link small {
-    font-size: 9px;
-    color: #706778
-}
-
 .site-footer {
     width: min(1120px, calc(100% - 48px));
     margin: auto;
@@ -1193,20 +1127,6 @@ a {
         gap: 35px
     }
 
-    .market-row {
-        align-items: flex-start;
-        gap: 20px;
-        flex-direction: column
-    }
-
-    .market-links {
-        width: 100%
-    }
-
-    .market-link {
-        flex: 1;
-        min-width: 0
-    }
 }
 
 @media(max-width:640px) {
@@ -1386,14 +1306,6 @@ a {
 
     .order-deco {
         font-size: 55px
-    }
-
-    .market-links {
-        flex-direction: column
-    }
-
-    .market-link {
-        width: 100%
     }
 
     .site-footer {
