@@ -33,12 +33,19 @@ const allLoadedMsg = document.getElementById('all-loaded-msg');
 
 if (galleryGrid && loadMoreBtn) {
   const additionalImages = [
-    "assets/assets2.jpg",
+    "assets/karya-10.jpg",
+    "assets/karya-11.jpg",
+    "assets/karya-12.jpg",
+    "assets/karya-13.jpg",
+    "assets/karya-14.jpg",
+    "assets/karya-15.jpg",
+    "assets/karya-16.jpg",
+    "assets/karya-17.jpg",
+    "assets/karya-18.jpg",
     "assets/assets1.jpg",
-    "assets/assets4.jpg",
-    "assets/assets3.jpg",
     "assets/assets2.jpg",
-    "assets/assets1.jpg"
+    "assets/assets3.jpg",
+    "assets/assets4.jpg"
   ];
 
   let currentIndex = 0;
