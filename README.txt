@@ -2,9 +2,9 @@ KARIKARIA WEBSITE
 
 File:
 - index.html  : struktur dan konten beranda website
-- galeri.html : halaman galeri foto karya dengan fitur Load More
+- galeri.html : halaman galeri lengkap dengan fitur filter kategori dan Load More
 - style.css   : desain, gradasi warna, animasi, dan responsive layout
-- script.js   : menu mobile, animasi scroll, dan fitur Load More foto galeri
+- script.js   : menu mobile, animasi scroll, filter karya, dan fitur Load More
 - assets/     : gambar karya karikatur dan logo resmi Karikaria
 
 PENGATURAN WAJIB SEBELUM DIPUBLIKASIKAN

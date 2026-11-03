@@ -18,7 +18,7 @@ const revealObserver = new IntersectionObserver(entries => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 // Dynamic Year
@@ -26,7 +26,65 @@ document.querySelectorAll('#year').forEach(el => {
   el.textContent = new Date().getFullYear();
 });
 
-// Gallery Interactive Features (Load More)
+// 1. Fitur Load More di Halaman Utama (Section GALERI PILIHAN)
+const homeWorkGrid = document.getElementById('home-work-grid');
+const homeLoadMoreBtn = document.getElementById('home-load-more');
+const homeAllLoadedMsg = document.getElementById('home-all-loaded');
+
+if (homeWorkGrid && homeLoadMoreBtn) {
+  const homeExtraItems = [
+    {
+      img: "assets/assets1.jpg",
+      title: "Sweet Anniversary",
+      subtitle: "Hadiah hari jadi istimewa",
+      num: "04"
+    },
+    {
+      img: "assets/assets3.jpg",
+      title: "Graduation Celebration",
+      subtitle: "Momen wisuda & gelar baru",
+      num: "05"
+    },
+    {
+      img: "assets/assets4.jpg",
+      title: "Holiday Memory",
+      subtitle: "Kenangan liburan seru",
+      num: "06"
+    }
+  ];
+
+  let homeLoaded = false;
+
+  homeLoadMoreBtn.addEventListener('click', () => {
+    if (homeLoaded) return;
+    homeLoadMoreBtn.classList.add('loading');
+    homeLoadMoreBtn.disabled = true;
+
+    setTimeout(() => {
+      homeExtraItems.forEach(item => {
+        const article = document.createElement('article');
+        article.className = 'work-card reveal visible';
+        article.innerHTML = `
+          <div class="sample-art">
+            <img src="${item.img}" alt="${item.title} — Karikatur Digital" class="sample-image" />
+          </div>
+          <div class="work-meta">
+            <div><b>${item.title}</b><span>${item.subtitle}</span></div>
+            <span class="work-number">${item.num}</span>
+          </div>
+        `;
+        homeWorkGrid.appendChild(article);
+      });
+
+      homeLoaded = true;
+      homeLoadMoreBtn.classList.remove('loading');
+      homeLoadMoreBtn.style.display = 'none';
+      if (homeAllLoadedMsg) homeAllLoadedMsg.style.display = 'block';
+    }, 350);
+  });
+}
+
+// 2. Fitur Load More di Halaman Galeri (galeri.html)
 const galleryGrid = document.getElementById('gallery-grid');
 const loadMoreBtn = document.getElementById('load-more-btn');
 const allLoadedMsg = document.getElementById('all-loaded-msg');
