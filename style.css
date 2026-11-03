@@ -20,13 +20,13 @@
 .filter-btn.active{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:0 8px 22px #21132b35}
 
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.gallery-card{background:#ffffffd4;border:1px solid #ffffffb0;border-radius:20px;padding:13px;box-shadow:0 15px 40px #68427814;transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column}
-.gallery-card:hover{transform:translateY(-8px);box-shadow:0 22px 50px #68427825}
+.gallery-card{background:#ffffffd4;border:1px solid #ffffffb0;border-radius:18px;padding:10px;box-shadow:0 15px 40px #68427814;transition:transform .3s ease,box-shadow .3s ease;overflow:hidden}
+.gallery-card:hover{transform:translateY(-7px);box-shadow:0 22px 50px #68427825}
 .gallery-card.loaded{animation:fadeCard .45s ease forwards}
 @keyframes fadeCard{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 .gallery-card.hidden{display:none!important}
 
-.gallery-img-wrap{height:260px;border-radius:14px;overflow:hidden;position:relative;background:#f3def0}
+.gallery-img-wrap{height:320px;border-radius:12px;overflow:hidden;position:relative;background:#f3def0}
 .gallery-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
 .gallery-card:hover .gallery-img-wrap img{transform:scale(1.05)}
 .gallery-tag{position:absolute;top:12px;left:12px;background:#ffffffdb;backdrop-filter:blur(8px);font-size:9px;font-weight:800;letter-spacing:1px;padding:5px 11px;border-radius:20px;color:var(--ink);text-transform:uppercase;box-shadow:0 4px 12px #38194418}
@@ -46,6 +46,6 @@
 .all-loaded-msg{color:#493c52;font-weight:700;font-size:13px;margin-top:16px}
 
 @media(max-width:800px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:18px}}
-@media(max-width:640px){.gallery-grid{grid-template-columns:1fr;gap:16px}.gallery-img-wrap{height:270px}.filter-bar{gap:8px}.filter-btn{padding:8px 14px;font-size:11px}.load-more-wrap{padding:35px 0 50px}}
+@media(max-width:640px){.gallery-grid{grid-template-columns:1fr;gap:16px}.gallery-img-wrap{height:330px}.filter-bar{gap:8px}.filter-btn{padding:8px 14px;font-size:11px}.load-more-wrap{padding:35px 0 50px}}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
