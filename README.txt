@@ -1,10 +1,11 @@
 KARIKARIA WEBSITE
 
 File:
-- index.html : struktur dan konten website
-- style.css  : desain, gradasi warna, animasi, dan responsive layout
-- script.js  : menu mobile dan animasi saat scroll
-- logo.png   : letakkan file logo resmi Karikaria di folder ini
+- index.html  : struktur dan konten beranda website
+- galeri.html : halaman galeri lengkap dengan fitur filter kategori dan Load More
+- style.css   : desain, gradasi warna, animasi, dan responsive layout
+- script.js   : menu mobile, animasi scroll, filter karya, dan fitur Load More
+- assets/     : gambar karya karikatur dan logo resmi Karikaria
 
 PENGATURAN WAJIB SEBELUM DIPUBLIKASIKAN
 1. Buka index.html dengan editor kode.
